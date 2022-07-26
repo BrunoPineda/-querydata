@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <main class="container">
+        <form id="form">
+            <label type="text">
+      Consulta tu DNI
+      <input required type="text" id="input" placeholder="Introduce aquí el DNI">
+      <small>Por ejemplo : 76488411</small>
+      <input readonly type="text" id="name" placeholder="Nombre">
+      <input readonly type="text" id="lastname1" placeholder="Apellido paterno">
+      <input readonly type="text" id="lastname2" placeholder="Apellido materno">
+      <input readonly type="text" id="ip" placeholder="Ingrese una IP">
+    </label>
+            <button id="submit">Buscar información del DNI</button>
+        </form>
+
+        <div>
+            <pre id="name1"></pre>
+            <pre id="results"></pre>
+        </div>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
